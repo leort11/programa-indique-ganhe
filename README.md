@@ -45,8 +45,8 @@ Aplicação web desenvolvida como **desafio técnico** que permite aos usuários
 ### Instalação
 ```bash
 # Clone e acesse o projeto
-git clone [URL_DO_REPOSITORIO]
-cd indicacao
+git clone https://github.com/leort11/programa-indique-ganhe.git
+cd programa-indique-ganhe
 
 # Instale dependências
 npm install
@@ -63,7 +63,7 @@ npm run build
 
 ## 💻 Como Usar
 
-1. **Cadastro**: Crie conta em `/register`
+1. **Cadastro**: Crie conta em Cadastre-se ou na URL: `/register`
 2. **Login**: Acesse com email/senha
 3. **Dashboard**: Veja estatísticas e histórico
 4. **Nova Indicação**: Preencha dados da pessoa indicada
