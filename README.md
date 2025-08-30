@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+# 🎯 Programa Indique e Ganhe
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
 
-## Available Scripts
+![React](https://img.shields.io/badge/React-18.2.0-blue?style=for-the-badge&logo=react)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow?style=for-the-badge&logo=javascript)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.3.0-cyan?style=for-the-badge&logo=tailwindcss)
 
-In the project directory, you can run:
+### Sistema web para cadastro de indicações com descontos progressivos
 
-### `npm start`
+[🚀 Como Executar](#-como-executar) • [✨ Funcionalidades](#-funcionalidades) • [💻 Como Usar](#-como-usar) • [🎯 Demo](#-testando-a-aplicação)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+</div>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+## 📖 Sobre o Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Aplicação web desenvolvida como **desafio técnico** que permite aos usuários indicar amigos e ganhar descontos progressivos em consultas médicas.
 
-### `npm run build`
+### 🎯 Objetivo
+- Indicar até 5 amigos para consultas
+- Acompanhar status das indicações em tempo real
+- Ganhar **20% de desconto por conversão** (máximo 100%)
+- Interface moderna e intuitiva
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🛠️ Tecnologias
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **React 18** - Framework principal
+- **React Router DOM** - Roteamento client-side
+- **Tailwind CSS** - Estilização moderna
+- **LocalStorage** - Persistência de dados
+- **JavaScript ES6+** - Linguagem
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 🚀 Como Executar
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Pré-requisitos
+- Node.js 16+ e npm
+- Navegador moderno
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Instalação
+```bash
+# Clone e acesse o projeto
+git clone [URL_DO_REPOSITORIO]
+cd indicacao
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+# Instale dependências
+npm install
 
-## Learn More
+# Execute em desenvolvimento
+npm run dev
+# Acesse: http://localhost:3000
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Build para produção
+npm run build
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+---
 
-### Code Splitting
+## 💻 Como Usar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. **Cadastro**: Crie conta em `/register`
+2. **Login**: Acesse com email/senha
+3. **Dashboard**: Veja estatísticas e histórico
+4. **Nova Indicação**: Preencha dados da pessoa indicada
+5. **Acompanhar**: Monitore status e descontos
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## ✨ Funcionalidades
 
-### Making a Progressive Web App
+### 🔐 Autenticação Completa
+- ✅ Cadastro com validação (senha: 6+ caracteres + 1 número)
+- ✅ Login/logout funcionais
+- ✅ Proteção de rotas privadas
+- ✅ Emails únicos no sistema
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### 📊 Dashboard Interativo
+- ✅ Estatísticas em tempo real
+- ✅ Barra de progresso dos descontos
+- ✅ Histórico completo de indicações
+- ✅ Gerenciamento de status
 
-### Advanced Configuration
+### 👥 Sistema de Indicações
+- ✅ Máximo 5 indicações por usuário
+- ✅ Campos obrigatórios: Nome e Telefone
+- ✅ Email opcional
+- ✅ Dados do indicador preenchidos automaticamente
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+### 💰 Descontos Progressivos
+- 1 conversão = 20% desconto
+- 2 conversões = 40% desconto
+- 3 conversões = 60% desconto
+- 4 conversões = 80% desconto
+- 5 conversões = 100% desconto (consulta gratuita)
 
-### Deployment
+### 🎛️ Gerenciamento
+- ✅ Status: Pendente/Convertida/Cancelada
+- ✅ Cancelar indicações pendentes
+- ✅ Simular conversões (demo)
+- ✅ Termos e condições completos
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+---
 
-### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 🎯 Testando a Aplicação
+
+### Fluxo Completo
+```bash
+1. Cadastre-se: nome@teste.com / senha123
+2. Faça login
+3. Crie indicações (máximo 5)
+4. Simule conversões clicando no ✅
+5. Observe o desconto aumentar
+```
+
+### Verificar Dados
+```javascript
+// Console do navegador (F12)
+localStorage.getItem('usuarios')      // Usuários
+localStorage.getItem('usuarioLogado') // Sessão atual
+localStorage.getItem('indicacoes')    // Indicações
+```
+
+---
+
+## 📋 Regras de Negócio
+
+- **Limite**: 5 indicações por usuário
+- **Validação**: Email único, senha segura
+- **Desconto**: 20% por conversão (máx. 100%)
+- **Estados**: Pendente → Convertida/Cancelada
+- **Termos**: Aceite obrigatório por indicação
+
+---
+
+## 📞 Informações
+
+**Desenvolvido como:** Desafio Técnico - Desenvolvedor  
+**Data:** Agosto 2025  
+
+---
+
+<div align="center">
+
+**Desenvolvido como desafio técnico**
+
+</div>
