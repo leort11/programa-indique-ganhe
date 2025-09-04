@@ -19,20 +19,16 @@
 Aplicação web desenvolvida como **desafio técnico** que permite aos usuários indicar amigos e ganhar descontos progressivos em consultas médicas.
 
 ### 🎯 Objetivo
-- Indicar até 5 amigos para consultas
-- Acompanhar status das indicações em tempo real
-- Ganhar **20% de desconto por conversão** (máximo 100%)
-- Interface moderna e intuitiva
+
+Criar uma aplicação web onde o usuário pode cadastrar e logar em uma conta, indicar até 5 amigos, acompanhar os status das indicações com uma interface intuitiva e ganhando 20% de desconto por conversão (máximo 1000%).
 
 ---
 
 ## 🛠️ Tecnologias
 
-- **React 18** - Framework principal
-- **React Router DOM** - Roteamento client-side
-- **Tailwind CSS** - Estilização moderna
-- **LocalStorage** - Persistência de dados
-- **JavaScript ES6+** - Linguagem
+  Framework: React.
+  Estilização: TailWind CSS.
+  Percistencia de dados: LocalStorage.
 
 ---
 
@@ -54,20 +50,17 @@ npm install
 # Execute em desenvolvimento
 npm run dev
 # Acesse: http://localhost:3000
-
-# Build para produção
-npm run build
 ```
 
 ---
 
 ## 💻 Como Usar
 
-1. **Cadastro**: Crie conta em Cadastre-se ou na URL: `/register`
-2. **Login**: Acesse com email/senha
-3. **Dashboard**: Veja estatísticas e histórico
-4. **Nova Indicação**: Preencha dados da pessoa indicada
-5. **Acompanhar**: Monitore status e descontos
+1. Primeiro crie uma conta no botão **Cadastre-se** ou na URL: `/register`
+3. Acesse sua conta na tela de login com email/senha que você usou no cadastro
+4. Veja as estatísticas e histórico no seu Dashboard
+5. vá para a area de indicação e preencha os dados da pessoa indicada
+6. Acompanhe, Monitore status e descontos novamente no dashboard
 
 ---
 
@@ -113,7 +106,7 @@ npm run build
 ```bash
 1. Cadastre-se: nome@teste.com / senha123
 2. Faça login
-3. Crie indicações (máximo 5)
+3. Crie indicações (máximo 5), aceitando os termos de condição
 4. Simule conversões clicando no ✅
 5. Observe o desconto aumentar
 ```
@@ -125,28 +118,20 @@ localStorage.getItem('usuarios')      // Usuários
 localStorage.getItem('usuarioLogado') // Sessão atual
 localStorage.getItem('indicacoes')    // Indicações
 ```
-
----
-
-## 📋 Regras de Negócio
-
-- **Limite**: 5 indicações por usuário
-- **Validação**: Email único, senha segura
-- **Desconto**: 20% por conversão (máx. 100%)
-- **Estados**: Pendente → Convertida/Cancelada
-- **Termos**: Aceite obrigatório por indicação
+Existem apenas essas formas de consultar os dados, outros meios não vão ser desenvolvidos.
 
 ---
 
 ## 📞 Informações
 
-**Desenvolvido como:** Desafio Técnico - Desenvolvedor  
-**Data:** Agosto 2025  
+**Desenvolvido como a solução de um Desafio Técnico para vaga de Desenvolvedor.**
+
+Agosto 2025  
 
 ---
 
 <div align="center">
 
-**Desenvolvido como desafio técnico**
+**Desenvolvido por Leonardo Ângelo Figueiredo Muniz**
 
 </div>
